@@ -5,14 +5,14 @@
   <body>
     <div class="container">
       <header>
-        <a href="{{ site.url }}" title="Home">
-          <h3>
+        <a href="{{ site.baseurl }}" title="Home">
+          <h2>
             {{ site.title }}
-          </h3>
+          </h2>
         </a>
         <nav>
           {% for nav in site.nav %}
-          <a href="{{ nav.url }}">{{ nav.title }}</a>
+            <a href="{{ nav.url }}">{{ nav.title }}</a>
           {% endfor %}
         </nav>
       </header>
@@ -20,6 +20,5 @@
         {{ content }}
       </main>
     </div>
-  </body>
-
-  </html>
+</body>
+</html>
