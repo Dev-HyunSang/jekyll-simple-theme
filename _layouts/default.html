@@ -1,0 +1,25 @@
+<!DOTYPE html>
+  <html lang="ko">
+  {% include head.html %}
+
+  <body>
+    <div class="container">
+      <header>
+        <a href="{{ site.url }}" title="Home">
+          <h3>
+            {{ site.title }}
+          </h3>
+        </a>
+        <nav>
+          {% for nav in site.nav %}
+          <a href="{{ nav.url }}">{{ nav.title }}</a>
+          {% endfor %}
+        </nav>
+      </header>
+      <main>
+        {{ content }}
+      </main>
+    </div>
+  </body>
+
+  </html>

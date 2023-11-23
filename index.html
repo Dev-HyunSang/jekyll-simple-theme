@@ -1,0 +1,46 @@
+---
+layout: default
+title: Home
+---
+<b>software enginner 🧑🏻‍💻 · infomation security major</b>
+
+<p style="padding-top: 0.5rem; padding-bottom: 0.5rem;">
+  {{ site.description}}
+</p>
+
+<blockquote>
+  <b>'아! 내가 모른다는 걸 안다는 게 이 사람들보다 똑똑하다는 이이갸구나.'</b><br />
+  소크라테스는 '모른다는 것을 아는 것'이 인간이 알 수 있는 최고의 지혜라고 봤네. 자신이 무지하다는 걸 아는 자가 아테네에서 소크라테스 한 사람이었던 거야.<br />
+  <b>'너 자신을 알라.'</b> - 이어령의 마지막 수업 중.
+</blockquote>
+
+<hr />
+
+<div class="posts">
+  <h2 class="posts-title">Posts</h2>
+  {% for post in site.posts %}
+  {%if post.type == "post" %}
+  <a href="{{ post.url }}">
+    <h3>
+      <span>{{ post.date | date: "%F" }}</span>
+      {{ post.title }}
+    </h3>
+    <p>{{ post.summary}}</p>
+  </a>
+  {% endif %}
+  {% endfor %}
+  {% for post in site.posts %}
+  {%if post.type == "report" %}
+  <hr />
+  <h2>Reports</h2>
+  <p>Reports - 다양한 보고서 및 동향 분석서를 읽고 남깁니다.</p>
+  <a href="{{ post.url }}">
+    <h3>
+      <span>{{ post.date | date: "%F" }}</span>
+      {{ post.title }}
+    </h3>
+    <p>{{ post.summary}}</p>
+  </a>
+  {% endif %}
+  {% endfor %}
+</div>

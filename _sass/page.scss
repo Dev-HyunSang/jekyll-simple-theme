@@ -1,0 +1,29 @@
+.container {
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+}
+a {
+    border-bottom: 0.1rem solid #000;
+}
+h2, h3, h4 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+h2 {
+    font-size: 23px;
+    font-weight: bold;
+}
+h3{
+    font-size: 20px;
+    font-weight: bold;
+}
+li {
+    margin-left: 0.5rem;
+    padding-left: 0.1rem;
+    list-style: inside;
+}
+img {
+    max-width: 50rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}

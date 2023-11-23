@@ -1,0 +1,39 @@
+# Setup
+title: 박현상, HyunSang Park
+description: "안녕하세요. 박현상입니다.<br/>읽고 듣고 말하고 쓰고를 잘하고자 노력하고 있습니다.<br/>다양한 분들과 공동의 목표를 성취하기 위해서 다양한 활동을 하고 있습니다."
+url: "https://hyunsang.dev"
+baseurl: ""
+permalink: pretty
+
+# Gems
+plugins:
+  - jekyll-gist
+  - jekyll-paginate
+  - jekyll-seo-tag
+
+# Optimize Jekyll
+exclude:
+  - .editorconfig
+  - .git
+  - .jekyll-cache
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE.md
+  - README.md
+
+sass:
+  sass_dir: _sass
+  
+author:
+  name: 박현상, HyunSang Park
+  url: https://github.com/dev-hyunsang
+  email: me@hyunsang.dev
+
+# Navbar page list
+nav:
+  - title: About 🧑🏻‍💻
+    url: /about
+  - title: Hacking 🛠
+    url: /hacking
+  - title: TIL 📚
+    url: /TIL
